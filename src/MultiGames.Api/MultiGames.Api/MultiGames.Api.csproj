@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>disable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<SonarQubeExclude>True</SonarQubeExclude>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>		
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.21" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.21">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+		<PackageReference Include="X.PagedList" Version="8.4.7" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\MultiGames.Bootstrap\MultiGames.Bootstrap.csproj" />
+	</ItemGroup>
+
+</Project>
